@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Kathiravan — Developer &amp; Designer</title>
-<meta name="description" content="Portfolio of Kathiravan — ECE Student, Full Stack Developer, UI/UX Designer, and IoT Builder. Founder of Artlane Diaries."/>
+<title>Kathiravan V — ECE Student & Full Stack Developer</title>
+<meta name="description" content="Portfolio of Kathiravan V — ECE Undergraduate at Panimalar Engineering College, Full Stack Developer, Embedded Systems Builder, and Founder of Artlane Diaries."/>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -42,17 +42,19 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);overflow-x:h
 .wrap{max-width:1160px;margin:0 auto;padding:0 40px;position:relative;z-index:2}
 
 /* ── NAVIGATION ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 40px;height:68px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,7,9,.85);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);transition:border-color .3s}
-nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,0,.5)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 40px;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,7,9,.88);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);transition:border-color .3s,box-shadow .3s}
+nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,0,.6)}
 .nav-brand{font-family:var(--font);font-size:15px;font-weight:700;letter-spacing:.05em;color:#ffffff;text-decoration:none;display:flex;align-items:center;gap:10px;text-shadow:0 0 20px rgba(124,58,237,.6)}
 .nbdot{width:8px;height:8px;background:var(--g3);border-radius:50%;flex-shrink:0;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(16,185,129,.6)}60%{opacity:.4;box-shadow:0 0 0 8px transparent}}
-.nav-links{display:flex;gap:6px}
-.nav-links a{font-size:12px;font-weight:500;letter-spacing:.06em;color:var(--muted);text-decoration:none;padding:8px 18px;border-radius:20px;transition:all .22s}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{font-size:12px;font-weight:500;letter-spacing:.06em;color:var(--muted);text-decoration:none;padding:7px 15px;border-radius:20px;transition:all .22s}
 .nav-links a:hover{color:#fff;background:var(--glass2)}
+.nav-cv-btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.1em;padding:7px 16px;border-radius:20px;background:rgba(124,58,237,0.15);border:1px solid rgba(124,58,237,0.4);color:#ffffff;text-decoration:none;transition:all .22s;margin-left:8px}
+.nav-cv-btn:hover{background:var(--g1);border-color:transparent;box-shadow:0 0 20px rgba(124,58,237,0.5);transform:translateY(-1px)}
 
 /* ── BANNER ── */
-.banner-wrap{position:relative;z-index:2;padding-top:68px}
+.banner-wrap{position:relative;z-index:2;padding-top:72px}
 .banner-wrap img{width:100%;display:block;max-height:240px;object-fit:cover;object-position:center 40%;opacity:.85}
 .banner-fade{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 20%,var(--bg) 100%)}
 
@@ -69,7 +71,7 @@ nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 
 .hname{
-  font-size:clamp(52px,7.5vw,94px);
+  font-size:clamp(50px,7vw,90px);
   font-weight:900;
   line-height:.95;
   letter-spacing:-.03em;
@@ -98,11 +100,13 @@ nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,
 .hbadge{font-family:var(--mono);font-size:10px;letter-spacing:.1em;padding:6px 14px;border-radius:20px;background:var(--glass);border:1px solid var(--border2);color:rgba(255,255,255,.65);transition:all .22s;cursor:default}
 .hbadge:hover{background:var(--glass2);color:#fff;border-color:rgba(255,255,255,.3);transform:translateY(-2px)}
 
-.hcta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:24px;animation:fadeUp .65s .42s both}
-.btn-g{display:inline-flex;align-items:center;gap:10px;padding:13px 30px;border-radius:10px;text-decoration:none;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;font-weight:600;font-size:13px;letter-spacing:.02em;transition:all .25s;box-shadow:0 0 28px rgba(124,58,237,.4);cursor:none;position:relative;overflow:hidden}
+.hcta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px;animation:fadeUp .65s .42s both}
+.btn-g{display:inline-flex;align-items:center;gap:10px;padding:13px 28px;border-radius:10px;text-decoration:none;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;font-weight:600;font-size:13px;letter-spacing:.02em;transition:all .25s;box-shadow:0 0 28px rgba(124,58,237,.4);cursor:none;position:relative;overflow:hidden}
 .btn-g:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(124,58,237,.6)}
-.btn-o{display:inline-flex;align-items:center;gap:10px;padding:13px 30px;border-radius:10px;text-decoration:none;background:transparent;border:1px solid var(--border2);color:rgba(255,255,255,.7);font-weight:500;font-size:13px;transition:all .25s;cursor:none}
+.btn-o{display:inline-flex;align-items:center;gap:10px;padding:13px 24px;border-radius:10px;text-decoration:none;background:transparent;border:1px solid var(--border2);color:rgba(255,255,255,.7);font-weight:500;font-size:13px;transition:all .25s;cursor:none}
 .btn-o:hover{color:#fff;border-color:rgba(255,255,255,.35);background:var(--glass2);transform:translateY(-3px)}
+.btn-cv{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:10px;text-decoration:none;background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.35);color:var(--g3);font-weight:600;font-size:13px;letter-spacing:.02em;transition:all .25s;cursor:none}
+.btn-cv:hover{background:rgba(16,185,129,0.25);border-color:var(--g3);color:#ffffff;transform:translateY(-3px);box-shadow:0 8px 24px rgba(16,185,129,0.3)}
 
 .hcounter{animation:fadeUp .65s .48s both}
 .hcounter img{border-radius:4px;opacity:.75}
@@ -122,7 +126,7 @@ nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,
 
 /* ── SECTION HEADINGS ── */
 .sec{padding:96px 0;position:relative;z-index:2}
-.shead{display:flex;align-items:center;gap:18px;margin-bottom:56px}
+.shead{display:flex;align-items:center;gap:18px;margin-bottom:48px}
 .snum{font-family:var(--mono);font-size:11px;color:var(--g1);letter-spacing:.25em;background:rgba(124,58,237,.12);border:1px solid rgba(124,58,237,.25);padding:5px 12px;border-radius:6px}
 .stitle{font-size:clamp(28px,3.5vw,42px);font-weight:800;letter-spacing:-.02em;color:#ffffff}
 .sline{flex:1;height:1px;background:linear-gradient(90deg,var(--border2),transparent)}
@@ -154,7 +158,86 @@ nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,
 .skill-card:hover .stag{border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.7)}
 
 /* ════════════════════════════════════════════════════════════
-   PROJECTS SECTION — EDITORIAL CARDS & STORYTELLING (#1 PRIORITY)
+   EXPERIENCE & LEADERSHIP TIMELINE SECTION
+   ════════════════════════════════════════════════════════════ */
+.timeline-container{position:relative;padding-left:32px;display:flex;flex-direction:column;gap:36px}
+.timeline-container::before{content:'';position:absolute;left:10px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--g1),var(--g2),transparent)}
+.tl-item{position:relative;background:linear-gradient(145deg,rgba(15,15,22,0.85),rgba(10,10,15,0.92));border:1px solid var(--border);border-radius:18px;padding:28px 32px;transition:all .3s}
+.tl-item:hover{border-color:rgba(124,58,237,0.4);transform:translateX(6px);box-shadow:0 12px 36px rgba(0,0,0,0.4)}
+.tl-dot{position:absolute;left:-32px;top:28px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2.5px solid var(--g2);transform:translateX(-50%);box-shadow:0 0 12px var(--g2)}
+.tl-item:hover .tl-dot{background:var(--g1);border-color:#ffffff;box-shadow:0 0 16px var(--g1)}
+.tl-header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:12px;flex-wrap:wrap}
+.tl-role{font-size:18px;font-weight:700;color:#ffffff}
+.tl-org{font-family:var(--mono);font-size:11px;color:var(--g2);letter-spacing:.12em;margin-top:2px}
+.tl-date{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:rgba(255,255,255,0.4);background:rgba(255,255,255,0.05);padding:4px 12px;border-radius:20px;border:1px solid var(--border)}
+.tl-desc{font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:14px}
+.tl-tags{display:flex;flex-wrap:wrap;gap:6px}
+.tl-tag{font-family:var(--mono);font-size:9px;padding:3px 10px;border-radius:12px;background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.25);color:rgba(255,255,255,0.75)}
+
+/* ════════════════════════════════════════════════════════════
+   CREDENTIALS & CERTIFICATES SECTION (#1 PRIORITY UPGRADE)
+   ════════════════════════════════════════════════════════════ */
+.cred-controls{display:flex;flex-direction:column;gap:20px;margin-bottom:36px}
+.cred-search-wrap{position:relative;width:100%;max-width:540px}
+.cred-search-input{width:100%;background:var(--bg2);border:1px solid var(--border2);border-radius:14px;padding:14px 20px 14px 46px;font-family:var(--font);font-size:13.5px;color:#ffffff;outline:none;transition:all .25s}
+.cred-search-input:focus{border-color:var(--g1);box-shadow:0 0 20px rgba(124,58,237,0.3)}
+.cred-search-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%);font-size:16px;color:rgba(255,255,255,0.35);pointer-events:none}
+
+.cred-pills{display:flex;flex-wrap:wrap;gap:8px}
+.cred-pill{font-family:var(--mono);font-size:10px;letter-spacing:.12em;padding:8px 18px;border-radius:20px;background:var(--glass);border:1px solid var(--border);color:rgba(255,255,255,0.55);cursor:none;transition:all .22s;user-select:none}
+.cred-pill:hover{background:var(--glass2);color:#ffffff;border-color:rgba(255,255,255,0.25)}
+.cred-pill.active{background:linear-gradient(135deg,rgba(124,58,237,0.25),rgba(6,182,212,0.2));border-color:var(--g1);color:#ffffff;box-shadow:0 0 16px rgba(124,58,237,0.35)}
+
+.cred-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cred-card{background:linear-gradient(145deg,rgba(15,15,22,0.85),rgba(10,10,15,0.92));border:1px solid var(--border);border-radius:20px;padding:24px;display:flex;flex-direction:column;justify-space-between;gap:16px;transition:all .35s ease;position:relative;overflow:hidden;cursor:none}
+.cred-card:hover{border-color:rgba(124,58,237,0.4);transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,0.5), 0 0 30px rgba(124,58,237,0.15)}
+
+.cred-img-preview{width:100%;height:140px;border-radius:12px;background:#090910;border:1px solid var(--border);overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center}
+.cred-img-preview img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;opacity:0.85}
+.cred-card:hover .cred-img-preview img{transform:scale(1.06);opacity:1}
+.cred-img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,7,9,0.9),transparent 60%)}
+.cred-type-badge{position:absolute;top:10px;left:10px;font-family:var(--mono);font-size:8.5px;letter-spacing:.15em;padding:3px 9px;border-radius:12px;background:rgba(7,7,9,0.8);backdrop-filter:blur(8px);border:1px solid rgba(124,58,237,0.4);color:var(--g2)}
+
+.cred-info{display:flex;flex-direction:column;gap:8px}
+.cred-title{font-size:15px;font-weight:700;color:#ffffff;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cred-org{font-family:var(--mono);font-size:10px;color:rgba(255,255,255,0.45);letter-spacing:.1em}
+.cred-date{font-family:var(--mono);font-size:9.5px;color:var(--g3)}
+
+.cred-tags{display:flex;flex-wrap:wrap;gap:4px}
+.cred-tag{font-family:var(--mono);font-size:8.5px;padding:3px 8px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid var(--border);color:rgba(255,255,255,0.45)}
+
+.cred-actions{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px;border-top:1px solid var(--border)}
+.cred-btn-view{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--g2);background:transparent;border:none;cursor:none;display:inline-flex;align-items:center;gap:6px;transition:color .2s}
+.cred-btn-view:hover{color:#ffffff}
+.cred-verify-dot{font-family:var(--mono);font-size:9px;color:var(--g3);display:inline-flex;align-items:center;gap:4px;background:rgba(16,185,129,0.1);padding:3px 8px;border-radius:10px;border:1px solid rgba(16,185,129,0.3)}
+
+/* CERTIFICATE DETAIL MODAL */
+.cert-modal-backdrop{position:fixed;inset:0;background:rgba(3,3,6,0.85);backdrop-filter:blur(16px);z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .3s ease}
+.cert-modal-backdrop.open{opacity:1;pointer-events:auto}
+.cert-modal-card{background:linear-gradient(145deg,#0f0f17,#0a0a0f);border:1px solid var(--border2);border-radius:24px;width:100%;max-width:860px;max-height:90vh;overflow-y:auto;padding:36px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,0.8), 0 0 50px rgba(124,58,237,0.2);transform:scale(0.92);transition:transform .3s ease}
+.cert-modal-backdrop.open .cert-modal-card{transform:scale(1)}
+.cert-modal-close{position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.06);border:1px solid var(--border2);color:#ffffff;font-size:18px;display:flex;align-items:center;justify-content:center;cursor:none;transition:all .2s}
+.cert-modal-close:hover{background:rgba(239,68,68,0.2);border-color:#ef4444;color:#ef4444;transform:rotate(90deg)}
+
+.cert-modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.cert-modal-img-wrap{width:100%;border-radius:16px;overflow:hidden;border:1px solid var(--border2);background:#050508;box-shadow:0 12px 36px rgba(0,0,0,0.5)}
+.cert-modal-img-wrap img{width:100%;display:block;height:auto;object-fit:contain}
+.cert-modal-details{display:flex;flex-direction:column;gap:16px}
+.cert-modal-header{display:flex;flex-direction:column;gap:6px}
+.cert-modal-cat{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--g2)}
+.cert-modal-title{font-size:22px;font-weight:800;color:#ffffff;line-height:1.3}
+.cert-modal-org{font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.55);letter-spacing:.1em}
+
+.cert-modal-meta{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:14px;padding:14px}
+.cert-meta-item{display:flex;flex-direction:column;gap:2px}
+.cert-meta-label{font-family:var(--mono);font-size:8.5px;color:rgba(255,255,255,0.35);letter-spacing:.15em}
+.cert-meta-val{font-size:12px;font-weight:600;color:#ffffff}
+
+.cert-modal-desc{font-size:13.5px;color:rgba(255,255,255,0.7);line-height:1.7}
+.cert-modal-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+
+/* ════════════════════════════════════════════════════════════
+   PROJECTS SECTION — EDITORIAL CARDS (#1 PRIORITY)
    ════════════════════════════════════════════════════════════ */
 .projects-container{display:flex;flex-direction:column;gap:40px}
 
@@ -193,12 +276,10 @@ nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,
   box-shadow:0 24px 60px rgba(0,0,0,0.5), 0 0 40px rgba(124,58,237,0.12);
 }
 
-/* Reverse alternating layout */
 .proj-editorial-card.reverse{grid-template-columns:1fr 1fr}
 .proj-editorial-card.reverse .proj-visual-container{order:2}
 .proj-editorial-card.reverse .proj-content-container{order:1}
 
-/* Visual Canvas Area */
 .proj-visual-container{
   background:rgba(5,5,8,0.7);
   border:1px solid var(--border);
@@ -215,7 +296,6 @@ nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,
 }
 .proj-editorial-card:hover .proj-visual-container{border-color:rgba(124,58,237,0.25)}
 
-/* Visual Ambient Lighting */
 .proj-glow-bg{
   position:absolute;
   width:200px;height:200px;
@@ -227,10 +307,9 @@ nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,
 }
 .proj-editorial-card:hover .proj-glow-bg{opacity:.45}
 
-/* Storytelling Container */
-.proj-content-container{display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.proj-content-container{display:flex;flex-direction:column;justify-space-between;gap:18px}
 
-.proj-header-row{display:flex;justify-content:space-between;align-items:center}
+.proj-header-row{display:flex;justify-space-between;align-items:center}
 .proj-badge-num{
   font-family:var(--mono);
   font-size:12px;
@@ -262,12 +341,11 @@ nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,
   -webkit-text-fill-color:transparent;
 }
 
-/* Storytelling Flow (Problem -> Solution -> Tech -> Result) */
-.story-flow{display:flex;flex-direction:column;gap:12px;margin:8px 0}
-.story-block{display:flex;flex-direction:column;gap:3px}
+.story-flow{display:flex;flex-direction:column;gap:10px;margin:6px 0}
+.story-block{display:flex;flex-direction:column;gap:2px}
 .story-label{
   font-family:var(--mono);
-  font-size:9px;
+  font-size:8.5px;
   letter-spacing:.22em;
   color:var(--g1);
   display:flex;
@@ -275,15 +353,14 @@ nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,
   gap:6px;
 }
 .story-label::after{content:'';flex:1;height:1px;background:rgba(124,58,237,0.18)}
-.story-desc{font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.6}
+.story-desc{font-size:13px;color:rgba(255,255,255,0.65);line-height:1.55}
 
-/* Technology Badges */
 .proj-tech-grid{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
 .proj-tech-tag{
   font-family:var(--mono);
-  font-size:9.5px;
+  font-size:9px;
   letter-spacing:.08em;
-  padding:4px 11px;
+  padding:4px 10px;
   border-radius:20px;
   background:rgba(255,255,255,0.04);
   border:1px solid var(--border);
@@ -296,17 +373,16 @@ nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,
   background:rgba(124,58,237,0.08);
 }
 
-/* CTA Link Button */
-.proj-footer-action{display:flex;justify-content:flex-end;margin-top:auto}
+.proj-footer-action{display:flex;justify-content:flex-end;gap:10px;margin-top:auto;padding-top:10px}
 .proj-cta-btn{
   display:inline-flex;
   align-items:center;
-  gap:10px;
+  gap:8px;
   font-family:var(--mono);
-  font-size:11px;
+  font-size:10.5px;
   font-weight:700;
   letter-spacing:.12em;
-  padding:11px 22px;
+  padding:10px 20px;
   border-radius:10px;
   text-decoration:none;
   border:1px solid var(--border2);
@@ -324,9 +400,17 @@ nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,
 }
 .proj-editorial-card:hover .proj-cta-btn .arr{transform:translate(3px,-3px)}
 
-/* Custom SVG Visual Components */
 .svg-graphic{width:100%;height:100%;max-height:220px;object-fit:contain;transition:transform .4s ease}
 .proj-editorial-card:hover .svg-graphic{transform:scale(1.04)}
+
+/* ── ACHIEVEMENTS HACKATHONS ── */
+.achieve-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.achieve-card{background:linear-gradient(145deg,rgba(15,15,22,0.85),rgba(10,10,15,0.92));border:1px solid var(--border);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:14px;transition:all .3s}
+.achieve-card:hover{border-color:rgba(245,158,11,0.4);transform:translateY(-5px);box-shadow:0 16px 40px rgba(245,158,11,0.12)}
+.achieve-icon{width:44px;height:44px;border-radius:12px;background:rgba(245,158,11,0.12);border:1px solid rgba(245,158,11,0.3);display:flex;align-items:center;justify-content:center;font-size:20px}
+.achieve-title{font-size:16px;font-weight:700;color:#ffffff}
+.achieve-org{font-family:var(--mono);font-size:10px;color:var(--g4);letter-spacing:.12em}
+.achieve-desc{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6}
 
 /* ── GITHUB ── */
 .gh-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
@@ -373,12 +457,6 @@ nav.scrolled{border-bottom-color:var(--border2);box-shadow:0 10px 30px rgba(0,0,
 .qtext{font-size:clamp(19px,2.4vw,28px);font-weight:700;letter-spacing:-.01em;line-height:1.45;margin-bottom:20px;position:relative;z-index:1;color:#ffffff}
 .qattr{font-family:var(--mono);font-size:10.5px;color:rgba(255,255,255,.3);letter-spacing:.25em;position:relative;z-index:1}
 
-/* ── COFFEE ── */
-.coffee-wrap{text-align:center;padding:16px 0 64px;position:relative;z-index:2}
-.coffee-label{font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:rgba(255,255,255,.25);margin-bottom:14px}
-.coffee-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#f59e0b,#fbbf24);color:#1a0a00;font-weight:700;font-size:13.5px;letter-spacing:.03em;padding:13px 32px;border-radius:12px;text-decoration:none;transition:all .25s;box-shadow:0 0 24px rgba(245,158,11,.25);cursor:none}
-.coffee-btn:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(245,158,11,.45)}
-
 /* ── FOOTER ── */
 footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
 .f1{font-family:var(--font);font-size:14px;font-weight:700;letter-spacing:.05em;color:rgba(255,255,255,.7)}
@@ -409,20 +487,22 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
     scroll-behavior: auto !important;
   }
   .orb, #particles, .bg-grid { opacity: 0.1 !important; }
-  .proj-editorial-card, .skill-card, .term, .hgif { transform: none !important; }
+  .proj-editorial-card, .skill-card, .term, .hgif, .cred-card, .tl-item { transform: none !important; }
   #cur, #cur2 { display: none !important; }
   body { cursor: auto !important; }
-  a, button, .proj-cta-btn, .btn-g, .btn-o, .ccard, .coffee-btn { cursor: pointer !important; }
+  a, button, .proj-cta-btn, .btn-g, .btn-o, .btn-cv, .ccard, .cred-pill { cursor: pointer !important; }
 }
 
 /* ── RESPONSIVE MOBILE UPGRADES ── */
 @media(max-width:960px){
   .wrap{padding:0 24px}
-  nav{padding:0 24px}
+  nav{padding:0 20px;height:68px}
+  .nav-links a{padding:6px 10px;font-size:11px}
+  .nav-cv-btn{padding:5px 12px;font-size:10px}
   .hero-inner{grid-template-columns:1fr}
   .hero-right{order:-1}
   .hgif{max-height:220px;object-fit:cover;width:100%}
-  .about-grid,.skills-grid,.gh-grid,.conn-grid{grid-template-columns:1fr}
+  .about-grid,.skills-grid,.gh-grid,.conn-grid,.cred-grid,.achieve-grid,.cert-modal-grid{grid-template-columns:1fr}
   .focus-grid{grid-template-columns:1fr 1fr}
   .proj-editorial-card,.proj-editorial-card.reverse{grid-template-columns:1fr;gap:24px;padding:24px}
   .proj-editorial-card.reverse .proj-visual-container{order:1}
@@ -433,11 +513,13 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
 }
 @media(max-width:600px){
   .focus-grid,.skills-grid{grid-template-columns:1fr}
-  .hname{font-size:clamp(40px,11vw,68px)}
-  .nav-links a{padding:6px 12px;font-size:11px}
+  .hname{font-size:clamp(38px,10vw,64px)}
+  .nav-links a{padding:5px 8px;font-size:10px}
   .proj-editorial-card{padding:20px}
-  .story-desc{font-size:13px}
+  .story-desc{font-size:12.5px}
   .proj-title{font-size:20px}
+  .cert-modal-card{padding:24px}
+  .cert-modal-title{font-size:18px}
 }
 </style>
 </head>
@@ -453,12 +535,16 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
 
 <!-- NAVIGATION -->
 <nav id="navbar">
-  <a href="#" class="nav-brand"><span class="nbdot"></span>KATHIRAVAN</a>
+  <a href="#" class="nav-brand"><span class="nbdot"></span>KATHIRAVAN V</a>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#credentials">Credentials</a>
     <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
     <a href="#contact">Contact</a>
+    <a href="Kathiravan_V_CV.pdf" download="Kathiravan_V_CV.pdf" class="nav-cv-btn">↓ CV</a>
   </div>
 </nav>
 
@@ -485,28 +571,29 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
           <span>HEY THERE, I'M</span>
         </div>
 
-        <div class="hname">KATHIRAVAN</div>
-        <div class="hname hname-accent" style="margin-top:-8px;margin-bottom:18px;font-size:clamp(20px,3vw,34px);font-weight:700;letter-spacing:.01em">Developer &amp; Designer.</div>
+        <div class="hname">KATHIRAVAN V</div>
+        <div class="hname hname-accent" style="margin-top:-8px;margin-bottom:18px;font-size:clamp(20px,3vw,34px);font-weight:700;letter-spacing:.01em">Developer &amp; ECE Innovator.</div>
 
         <div class="htype"><span id="typer"></span></div>
 
         <p class="hbio">
-          <strong>ECE student</strong> building at the intersection of circuits and code.
-          I design clean UIs, ship full-stack web apps, and wire up real IoT hardware —
-          all while running <strong>Artlane Diaries</strong>, my creative startup.
+          <strong>ECE Undergraduate at Panimalar Engineering College</strong> building at the intersection of circuits, sensors, and code.
+          I design clean web UIs, ship full-stack applications, and wire up real IoT hardware —
+          all while running <strong>Artlane Diaries</strong>, my creative venture.
           Still learning. Always shipping.
         </p>
 
         <div class="hbadges">
-          <span class="hbadge">🌍 India</span>
+          <span class="hbadge">🇮🇳 Chennai, India</span>
           <span class="hbadge">⚡ ECE + Dev + Design</span>
+          <span class="hbadge">🎓 PEC Class of 2029</span>
           <span class="hbadge">🤝 Open to Collab</span>
-          <span class="hbadge">📚 Always Learning</span>
         </div>
 
         <div class="hcta">
           <a href="#projects" class="btn-g">View Projects →</a>
           <a href="https://www.linkedin.com/in/kathiravan-v-160555395" target="_blank" class="btn-o">LinkedIn ↗</a>
+          <a href="Kathiravan_V_CV.pdf" download="Kathiravan_V_CV.pdf" class="btn-cv">↓ Download Resume</a>
         </div>
 
         <div class="hcounter">
@@ -521,11 +608,12 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
           alt="Developer coding animation"/>
         <div class="term">
           <div class="tdots"><span class="tr"></span><span class="ty"></span><span class="tg"></span></div>
-          <div class="tl"><span class="k">const</span> dev = {</div>
-          <div class="tl">&nbsp;&nbsp;name:&nbsp;<span class="s">"Kathiravan"</span>,</div>
-          <div class="tl">&nbsp;&nbsp;stack:&nbsp;<span class="v">["ECE","MERN","IoT"]</span>,</div>
-          <div class="tl">&nbsp;&nbsp;mode:&nbsp;<span class="p">learning</span>&nbsp;+&nbsp;<span class="p">shipping</span>,</div>
-          <div class="tl">&nbsp;&nbsp;goal:&nbsp;<span class="s">"build real things"</span></div>
+          <div class="tl"><span class="k">const</span> engineer = {</div>
+          <div class="tl">&nbsp;&nbsp;name:&nbsp;<span class="s">"Kathiravan V"</span>,</div>
+          <div class="tl">&nbsp;&nbsp;college:&nbsp;<span class="s">"Panimalar Engineering College"</span>,</div>
+          <div class="tl">&nbsp;&nbsp;stack:&nbsp;<span class="v">["ECE","MERN","IoT","ESP32"]</span>,</div>
+          <div class="tl">&nbsp;&nbsp;mode:&nbsp;<span class="p">building</span>&nbsp;+&nbsp;<span class="p">shipping</span>,</div>
+          <div class="tl">&nbsp;&nbsp;goal:&nbsp;<span class="s">"build real physical &amp; web systems"</span></div>
           <div class="tl">};&nbsp;<span class="tcur"></span></div>
         </div>
       </div>
@@ -542,16 +630,16 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
     <div class="shead rv"><span class="snum">01</span><h2 class="stitle">About Me</h2><div class="sline"></div></div>
     <div class="about-grid">
       <div class="atext rvl">
-        <p>I'm pursuing <strong>Electronics &amp; Communication Engineering</strong> — but I've never stayed inside one box. I build IoT systems with real sensors and microcontrollers, then context-switch to designing web UIs that feel sharp and intentional.</p>
-        <p>Somewhere at the intersection of <strong>hardware and software</strong>, between circuits and interfaces, I found my thing. I care about how systems work at the low level and how they feel at the user level.</p>
-        <p>I've completed <strong>Python and Advanced Java</strong> and I'm actively growing across the MERN stack, embedded systems, and UI/UX. I also run <strong>Artlane Diaries</strong> — a creative startup blending art with emotion and design.</p>
+        <p>I'm pursuing <strong>Electronics &amp; Communication Engineering</strong> at <strong>Panimalar Engineering College</strong> (2025–2029) — but I've never stayed inside one box. I build IoT systems with real microcontrollers and sensors, then context-switch to designing web UIs that feel sharp and intentional.</p>
+        <p>Somewhere at the intersection of <strong>hardware and software</strong>, between circuits and interfaces, I found my craft. I care about how physical hardware operates at the signal level and how web applications feel at the user level.</p>
+        <p>I've completed <strong>Python Full Stack, Industrial PCB Design Training at Tritoconnect Technologies, and NCVET-recognised Machine Learning &amp; AI courses with CII &amp; HP</strong>. I also run <strong>Artlane Diaries</strong> — a creative brand blending personalized artwork with emotion and design.</p>
         <p>The mindset: learn hard, build honestly, ship consistently.</p>
       </div>
       <div class="acards sg rvr">
         <div class="acard"><span class="aclab">DEGREE</span><span class="acval">B.E. Electronics &amp; Comm.</span></div>
-        <div class="acard"><span class="aclab">LOCATION</span><span class="acval">India 🇮🇳</span></div>
-        <div class="acard"><span class="aclab">COMPLETED</span><span class="acval">Python + Advanced Java</span></div>
-        <div class="acard"><span class="aclab">FOCUS</span><span class="acval">IoT · Full Stack · UI/UX</span></div>
+        <div class="acard"><span class="aclab">COLLEGE</span><span class="acval">Panimalar Eng. College</span></div>
+        <div class="acard"><span class="aclab">GRADUATION</span><span class="acval">Expected 2029 (2nd Year)</span></div>
+        <div class="acard"><span class="aclab">INTERNSHIP</span><span class="acval">PCB Design — Tritoconnect</span></div>
         <div class="acard"><span class="aclab">STARTUP</span><span class="acval">Artlane Diaries — Founder</span></div>
         <div class="acard"><span class="aclab">STATUS</span><span class="acval g">● Learning + Building</span></div>
       </div>
@@ -564,39 +652,39 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
 <!-- SKILLS SECTION -->
 <section class="sec" id="skills">
   <div class="wrap">
-    <div class="shead rv"><span class="snum">02</span><h2 class="stitle">Skills</h2><div class="sline"></div></div>
+    <div class="shead rv"><span class="snum">02</span><h2 class="stitle">Technical Skills</h2><div class="sline"></div></div>
     <div class="skills-grid sg">
       <div class="skill-card">
         <div class="sk-ico">💻</div><div class="sk-name">PROGRAMMING</div>
-        <img class="sk-img" src="https://skillicons.dev/icons?i=html,css,js,python,c,typescript&amp;theme=dark" alt="Programming"/>
+        <img class="sk-img" src="https://skillicons.dev/icons?i=python,c,cpp,js,ts,html,css&amp;theme=dark" alt="Programming"/>
       </div>
       <div class="skill-card">
-        <div class="sk-ico">⚙️</div><div class="sk-name">FRAMEWORKS</div>
-        <img class="sk-img" src="https://skillicons.dev/icons?i=react,nodejs,express,django,flutter,tailwind&amp;theme=dark" alt="Frameworks"/>
+        <div class="sk-ico">⚙️</div><div class="sk-name">FRAMEWORKS &amp; WEB</div>
+        <img class="sk-img" src="https://skillicons.dev/icons?i=react,nodejs,express,tailwind,vite,bootstrap&amp;theme=dark" alt="Frameworks"/>
       </div>
       <div class="skill-card">
-        <div class="sk-ico">🔌</div><div class="sk-name">ECE / IoT</div>
+        <div class="sk-ico">🔌</div><div class="sk-name">ECE / HARDWARE / IOT</div>
         <div class="stags">
-          <span class="stag">ESP32</span><span class="stag">MQ3</span><span class="stag">MPU6050</span>
-          <span class="stag">IR Sensor</span><span class="stag">ESP-NOW</span><span class="stag">Embedded C</span>
-          <span class="stag">Automation</span><span class="stag">Telegram Bot</span>
+          <span class="stag">ESP32</span><span class="stag">Arduino</span><span class="stag">PCB Design</span>
+          <span class="stag">MQ3 Sensor</span><span class="stag">MPU6050</span><span class="stag">IR Sensor</span>
+          <span class="stag">ESP-NOW</span><span class="stag">GNU Octave</span><span class="stag">Embedded C</span>
         </div>
       </div>
       <div class="skill-card">
-        <div class="sk-ico">🗄️</div><div class="sk-name">DATABASES</div>
-        <img class="sk-img" src="https://skillicons.dev/icons?i=mongodb,firebase,mysql,postgresql&amp;theme=dark" alt="Databases"/>
+        <div class="sk-ico">🗄️</div><div class="sk-name">DATABASES &amp; CLOUD</div>
+        <img class="sk-img" src="https://skillicons.dev/icons?i=supabase,mongodb,mysql,firebase,vercel&amp;theme=dark" alt="Databases"/>
       </div>
       <div class="skill-card">
-        <div class="sk-ico">🎨</div><div class="sk-name">DESIGN</div>
+        <div class="sk-ico">🎨</div><div class="sk-name">DESIGN &amp; CREATIVE</div>
         <div class="stags">
           <span class="stag">UI/UX Design</span><span class="stag">Figma</span>
           <span class="stag">Graphic Design</span><span class="stag">Digital Art</span>
-          <span class="stag">Web Design</span><span class="stag">Prototyping</span>
+          <span class="stag">Brand Strategy</span><span class="stag">Prototyping</span>
         </div>
       </div>
       <div class="skill-card">
-        <div class="sk-ico">🧰</div><div class="sk-name">TOOLS</div>
-        <img class="sk-img" src="https://skillicons.dev/icons?i=git,figma,vscode,postman,androidstudio&amp;theme=dark" alt="Tools"/>
+        <div class="sk-ico">🧰</div><div class="sk-name">TOOLS &amp; WORKFLOWS</div>
+        <img class="sk-img" src="https://skillicons.dev/icons?i=git,github,vscode,postman,figma&amp;theme=dark" alt="Tools"/>
       </div>
     </div>
   </div>
@@ -604,45 +692,198 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
 
 <div class="gdiv"></div>
 
-<!-- PROJECTS SHOWCASE SECTION (PRIORITY #1) -->
+<!-- EXPERIENCE & LEADERSHIP SECTION -->
+<section class="sec" id="experience">
+  <div class="wrap">
+    <div class="shead rv"><span class="snum">03</span><h2 class="stitle">Experience &amp; Leadership</h2><div class="sline"></div></div>
+    
+    <div class="timeline-container rv">
+      
+      <!-- ITEM 1: TRITOCONNECT INTERNSHIP -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <h3 class="tl-role">PCB Design Hardware Intern</h3>
+            <div class="tl-org">TRITOCONNECT TECHNOLOGIES &amp; PROJECT SERVICES (MSME GOVT. OF INDIA)</div>
+          </div>
+          <span class="tl-date">April 10, 2026 – April 24, 2026</span>
+        </div>
+        <p class="tl-desc">
+          Completed an intensive hands-on industrial internship focusing on physical circuit design and PCB prototyping. Gained practical experience in schematic capture, component placement, Design Rule Checks (DRC/ERC), and fundamental PCB manufacturing workflows.
+        </p>
+        <div class="tl-tags">
+          <span class="tl-tag">PCB Design</span>
+          <span class="tl-tag">Schematic Creation</span>
+          <span class="tl-tag">DRC / ERC Checks</span>
+          <span class="tl-tag">Hardware Prototyping</span>
+          <span class="tl-tag">Circuit Analysis</span>
+        </div>
+      </div>
+
+      <!-- ITEM 2: ARTLANE DIARIES FOUNDER -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <h3 class="tl-role">Founder &amp; Creative Lead</h3>
+            <div class="tl-org">ARTLANE DIARIES (CREATIVE STARTUP &amp; BRAND)</div>
+          </div>
+          <span class="tl-date">2024 – Present</span>
+        </div>
+        <p class="tl-desc">
+          Founded and lead Artlane Diaries — a creative venture specializing in customized artwork, digital portraits, and emotional design. Oversee overall brand identity, digital showroom UI/UX development, client communications, and artistic delivery nationwide.
+        </p>
+        <div class="tl-tags">
+          <span class="tl-tag">Startup Founder</span>
+          <span class="tl-tag">UI/UX Design</span>
+          <span class="tl-tag">Brand Strategy</span>
+          <span class="tl-tag">Digital Art</span>
+          <span class="tl-tag">E-Commerce</span>
+        </div>
+      </div>
+
+      <!-- ITEM 3: PANIMALAR ENGINEERING COLLEGE EDUCATION -->
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <h3 class="tl-role">B.E. Electronics &amp; Communication Engineering</h3>
+            <div class="tl-org">PANIMALAR ENGINEERING COLLEGE, CHENNAI</div>
+          </div>
+          <span class="tl-date">2025 – 2029 (Current 2nd Year)</span>
+        </div>
+        <p class="tl-desc">
+          Actively building hardware prototypes, IoT systems, signal visualization scripts, and web platforms while maintaining strong academic performance in electronics, signal processing, microcontrollers, and communication systems.
+        </p>
+        <div class="tl-tags">
+          <span class="tl-tag">Electronics Engineering</span>
+          <span class="tl-tag">IoT Prototyping</span>
+          <span class="tl-tag">Signal Processing</span>
+          <span class="tl-tag">Embedded Systems</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="gdiv"></div>
+
+<!-- CREDENTIALS & CERTIFICATES SECTION (#1 PRIORITY UPGRADE) -->
+<section class="sec" id="credentials">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="snum">04</span>
+      <h2 class="stitle">Credentials &amp; Certificates</h2>
+      <div class="sline"></div>
+    </div>
+
+    <!-- CREDENTIAL CONTROLS: SEARCH & FILTER PILLS -->
+    <div class="cred-controls rv">
+      <div class="cred-search-wrap">
+        <span class="cred-search-icon">🔍</span>
+        <input type="text" id="cred-search-input" class="cred-search-input" placeholder="Search certificates by title, issuing organization, or skill..." />
+      </div>
+
+      <div class="cred-pills" id="cred-filter-pills">
+        <button class="cred-pill active" data-category="ALL">ALL CREDENTIALS</button>
+        <button class="cred-pill" data-category="ACHIEVEMENT">🏆 ACHIEVEMENTS</button>
+        <button class="cred-pill" data-category="INTERNSHIP">💼 INTERNSHIPS</button>
+        <button class="cred-pill" data-category="TECHNICAL">💻 TECHNICAL</button>
+        <button class="cred-pill" data-category="HACKATHONS">🚀 HACKATHONS</button>
+        <button class="cred-pill" data-category="WORKSHOPS">🛠️ WORKSHOPS</button>
+        <button class="cred-pill" data-category="COURSES">🎓 COURSES</button>
+      </div>
+    </div>
+
+    <!-- CERTIFICATES GRID -->
+    <div class="cred-grid" id="cred-grid">
+      <!-- Dynamic certificate cards injected via js/certificates.js -->
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATE DETAIL MODAL -->
+<div class="cert-modal-backdrop" id="cert-modal-backdrop">
+  <div class="cert-modal-card" id="cert-modal-card">
+    <button class="cert-modal-close" id="cert-modal-close" title="Close modal">&times;</button>
+    <div class="cert-modal-grid">
+      <div class="cert-modal-img-wrap">
+        <img id="modal-img" src="" alt="Certificate Preview"/>
+      </div>
+      <div class="cert-modal-details">
+        <div class="cert-modal-header">
+          <span class="cert-modal-cat" id="modal-cat">CATEGORY</span>
+          <h3 class="cert-modal-title" id="modal-title">Certificate Title</h3>
+          <div class="cert-modal-org" id="modal-org">Issuing Organization</div>
+        </div>
+
+        <div class="cert-modal-meta">
+          <div class="cert-meta-item">
+            <span class="cert-meta-label">DATE ISSUED</span>
+            <span class="cert-meta-val" id="modal-date">-</span>
+          </div>
+          <div class="cert-meta-item">
+            <span class="cert-meta-label">DURATION / LEVEL</span>
+            <span class="cert-meta-val" id="modal-duration">-</span>
+          </div>
+          <div class="cert-meta-item">
+            <span class="cert-meta-label">ROLE / TYPE</span>
+            <span class="cert-meta-val" id="modal-role">-</span>
+          </div>
+          <div class="cert-meta-item">
+            <span class="cert-meta-label">CREDENTIAL ID</span>
+            <span class="cert-meta-val" id="modal-id">-</span>
+          </div>
+        </div>
+
+        <p class="cert-modal-desc" id="modal-desc">Description of credential...</p>
+
+        <div class="cred-tags" id="modal-tags"></div>
+
+        <div class="cert-modal-actions" id="modal-actions">
+          <!-- External verification button injected dynamically if available -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="gdiv"></div>
+
+<!-- FEATURED PROJECTS SHOWCASE SECTION (UPGRADED CASE STUDIES) -->
 <section class="sec" id="projects">
   <div class="wrap">
-    <div class="shead rv"><span class="snum">03</span><h2 class="stitle">Featured Projects</h2><div class="sline"></div></div>
+    <div class="shead rv"><span class="snum">05</span><h2 class="stitle">Project Case Studies</h2><div class="sline"></div></div>
 
     <div class="projects-container">
 
       <!-- PROJECT 01: LEVEL UP -->
       <article class="proj-editorial-card rv" data-tilt>
-        <!-- Visual Component Area -->
         <div class="proj-visual-container">
           <div class="proj-glow-bg" style="background:var(--glow1);top:-20px;left:-20px"></div>
           <svg class="svg-graphic" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="400" height="240" rx="14" fill="#090910" stroke="#1f1f2e" stroke-width="1.5"/>
-            <!-- Mobile App Frame -->
             <rect x="135" y="20" width="130" height="200" rx="16" fill="#12121c" stroke="#7c3aed" stroke-width="2"/>
             <circle cx="200" cy="32" r="3" fill="#06b6d4"/>
-            <!-- AI Wave Equalizer -->
             <path d="M150 90 Q170 60 190 90 T230 90 T250 90" stroke="#06b6d4" stroke-width="2.5" fill="none"/>
             <path d="M150 90 Q170 120 190 90 T230 90 T250 90" stroke="#7c3aed" stroke-width="2" fill="none"/>
-            <!-- Stats Matrix -->
             <rect x="150" y="115" width="100" height="10" rx="3" fill="rgba(124,58,237,0.2)"/>
             <rect x="150" y="115" width="75" height="10" rx="3" fill="#7c3aed"/>
             <rect x="150" y="133" width="100" height="10" rx="3" fill="rgba(6,182,212,0.2)"/>
             <rect x="150" y="133" width="88" height="10" rx="3" fill="#06b6d4"/>
-            <!-- Indian Food DB Badge -->
             <rect x="150" y="155" width="46" height="22" rx="4" fill="#1a1a28" stroke="#33334d"/>
             <text x="173" y="170" font-family="Space Mono" font-size="8" fill="#10b981" text-anchor="middle">FOOD DB</text>
-            <!-- Voice IO Pulse -->
             <rect x="204" y="155" width="46" height="22" rx="4" fill="#1a1a28" stroke="#33334d"/>
             <text x="227" y="170" font-family="Space Mono" font-size="8" fill="#f59e0b" text-anchor="middle">VOICE I/O</text>
             <circle cx="200" cy="205" r="5" stroke="#7c3aed" stroke-width="1.5"/>
           </svg>
         </div>
 
-        <!-- Storytelling Content Area -->
         <div class="proj-content-container">
           <div class="proj-header-row">
-            <span class="proj-badge-num">PROJECT 01</span>
+            <span class="proj-badge-num">CASE STUDY 01</span>
             <span class="proj-type-tag">FITNESS PWA &amp; AI</span>
           </div>
 
@@ -658,6 +899,14 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
               <p class="story-desc">Built a self-growth fitness PWA with an interactive AI coach persona, integrated Indian food database, bodyweight programs across all experience levels, and voice I/O interaction.</p>
             </div>
             <div class="story-block">
+              <span class="story-label">KEY FEATURES</span>
+              <p class="story-desc">Voice I/O AI coach, offline PWA access, Indian nutrition tracking DB, customized workout routines.</p>
+            </div>
+            <div class="story-block">
+              <span class="story-label">MY CONTRIBUTION</span>
+              <p class="story-desc">Sole Developer &amp; UI Designer — engineered frontend architecture, Web Speech API integration, and PWA manifest.</p>
+            </div>
+            <div class="story-block">
               <span class="story-label">TECHNOLOGY</span>
               <div class="proj-tech-grid">
                 <span class="proj-tech-tag">HTML/CSS/JS</span>
@@ -669,7 +918,7 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
             </div>
             <div class="story-block">
               <span class="story-label">RESULT</span>
-              <p class="story-desc">Successfully deployed live web application with full offline capabilities and interactive AI voice capabilities.</p>
+              <p class="story-desc">Deployed live web app with full offline capabilities and instant voice interaction response.</p>
             </div>
           </div>
 
@@ -684,24 +933,19 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
 
       <!-- PROJECT 02: LEVEL UP V2 -->
       <article class="proj-editorial-card reverse rv" data-tilt>
-        <!-- Visual Component Area -->
         <div class="proj-visual-container">
           <div class="proj-glow-bg" style="background:var(--glow2);bottom:-20px;right:-20px"></div>
           <svg class="svg-graphic" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="400" height="240" rx="14" fill="#090910" stroke="#1f1f2e" stroke-width="1.5"/>
-            <!-- Dashboard V2 Matrix -->
             <rect x="40" y="30" width="320" height="180" rx="12" fill="#11111a" stroke="#06b6d4" stroke-width="1.5"/>
             <line x1="40" y1="70" x2="360" y2="70" stroke="#1f1f2e" stroke-width="1"/>
             <text x="60" y="55" font-family="Space Mono" font-size="11" fill="#ffffff" font-weight="bold">LEVELUP V2 // DISCIPLINE ENGINE</text>
-            <!-- Streak Counters -->
             <rect x="60" y="90" width="85" height="45" rx="8" fill="#181824" stroke="#7c3aed" stroke-width="1"/>
             <text x="70" y="108" font-family="Space Mono" font-size="8" fill="rgba(255,255,255,0.4)">STREAK</text>
             <text x="70" y="125" font-family="Space Mono" font-size="13" fill="#7c3aed" font-weight="bold">28 DAYS 🔥</text>
-            <!-- Tasks Grid -->
             <rect x="155" y="90" width="185" height="45" rx="8" fill="#181824" stroke="#1f1f2e" stroke-width="1"/>
             <circle cx="175" cy="112" r="6" fill="#10b981"/>
             <text x="190" y="115" font-family="Space Mono" font-size="9" fill="#ffffff">Daily Discipline Challenge</text>
-            <!-- Motivational Progress Bar -->
             <rect x="60" y="155" width="280" height="30" rx="6" fill="#141420" stroke="#33334d"/>
             <rect x="65" y="160" width="210" height="20" rx="4" fill="url(#v2grad)"/>
             <text x="200" y="174" font-family="Space Mono" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">MOTIVATION PULSE: 85%</text>
@@ -714,10 +958,9 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
           </svg>
         </div>
 
-        <!-- Storytelling Content Area -->
         <div class="proj-content-container">
           <div class="proj-header-row">
-            <span class="proj-badge-num">PROJECT 02</span>
+            <span class="proj-badge-num">CASE STUDY 02</span>
             <span class="proj-type-tag">ADVANCED DISCIPLINE PWA</span>
           </div>
 
@@ -733,6 +976,14 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
               <p class="story-desc">Architected LEVELUP V2 — an advanced version equipped with self-motivation modules, structured discipline tasks, habit streaks, and daily mindset challenges.</p>
             </div>
             <div class="story-block">
+              <span class="story-label">KEY FEATURES</span>
+              <p class="story-desc">Gamified habit streak tracking, daily discipline tasks, motivation audio pulse, lightweight Vercel deployment.</p>
+            </div>
+            <div class="story-block">
+              <span class="story-label">MY CONTRIBUTION</span>
+              <p class="story-desc">Full Stack Creator — designed responsive UI components, state management for streaks, and Vercel hosting setup.</p>
+            </div>
+            <div class="story-block">
               <span class="story-label">TECHNOLOGY</span>
               <div class="proj-tech-grid">
                 <span class="proj-tech-tag">HTML/CSS/JS</span>
@@ -744,7 +995,7 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
             </div>
             <div class="story-block">
               <span class="story-label">RESULT</span>
-              <p class="story-desc">Deploys advanced motivation and challenge systems live on Vercel with high user retention and fast loading times.</p>
+              <p class="story-desc">Live on Vercel delivering sub-second load times and high daily engagement.</p>
             </div>
           </div>
 
@@ -759,12 +1010,10 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
 
       <!-- PROJECT 03: RYDEX SMART HELMET -->
       <article class="proj-editorial-card rv" data-tilt>
-        <!-- Visual Component Area -->
         <div class="proj-visual-container">
           <div class="proj-glow-bg" style="background:rgba(245,158,11,0.2);top:-20px;left:-20px"></div>
           <svg class="svg-graphic" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="400" height="240" rx="14" fill="#090910" stroke="#1f1f2e" stroke-width="1.5"/>
-            <!-- ESP32 Blueprint Schematics -->
             <rect x="50" y="40" width="120" height="160" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
             <text x="110" y="62" font-family="Space Mono" font-size="10" fill="#38bdf8" text-anchor="middle" font-weight="bold">ESP32 #1 (HELMET)</text>
             <rect x="65" y="80" width="90" height="22" rx="4" fill="#1e293b"/>
@@ -773,12 +1022,8 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
             <text x="110" y="124" font-family="Space Mono" font-size="8" fill="#10b981" text-anchor="middle">IR HELMET DETECT</text>
             <rect x="65" y="140" width="90" height="22" rx="4" fill="#1e293b"/>
             <text x="110" y="154" font-family="Space Mono" font-size="8" fill="#ef4444" text-anchor="middle">MPU6050 ACCIDENT</text>
-
-            <!-- ESP-NOW Wireless Vector Wave -->
             <path d="M180 120 Q200 100 220 120 T260 120" stroke="#7c3aed" stroke-width="2" stroke-dasharray="4 4"/>
             <text x="210" y="95" font-family="Space Mono" font-size="8" fill="#7c3aed" text-anchor="middle">ESP-NOW WIRELESS</text>
-
-            <!-- ESP32 Receiver Node -->
             <rect x="250" y="40" width="100" height="160" rx="10" fill="#0f172a" stroke="#7c3aed" stroke-width="1.5"/>
             <text x="300" y="62" font-family="Space Mono" font-size="9" fill="#7c3aed" text-anchor="middle" font-weight="bold">ESP32 #2 (BIKE)</text>
             <rect x="260" y="90" width="80" height="35" rx="6" fill="#1e1b4b" stroke="#7c3aed"/>
@@ -787,10 +1032,9 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
           </svg>
         </div>
 
-        <!-- Storytelling Content Area -->
         <div class="proj-content-container">
           <div class="proj-header-row">
-            <span class="proj-badge-num">PROJECT 03</span>
+            <span class="proj-badge-num">CASE STUDY 03</span>
             <span class="proj-type-tag">HARDWARE &amp; IOT SYSTEM</span>
           </div>
 
@@ -806,6 +1050,14 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
               <p class="story-desc">Engineered a dual ESP32 IoT safety system utilizing ESP-NOW protocol. Integrates MQ3 alcohol sensor, MPU6050 crash sensor, and IR helmet detection to dispatch instant real-time Telegram alerts with live GPS coordinates upon accident detection.</p>
             </div>
             <div class="story-block">
+              <span class="story-label">KEY FEATURES</span>
+              <p class="story-desc">ESP-NOW sub-second peer transmission, ignition cut-off logic, MQ3 alcohol lockout, automatic emergency Telegram dispatch with location link.</p>
+            </div>
+            <div class="story-block">
+              <span class="story-label">MY CONTRIBUTION</span>
+              <p class="story-desc">Embedded Systems Engineer &amp; Firmware Developer — wrote ESP32 C++ firmware, calibrated sensor thresholds, and interfaced hardware components.</p>
+            </div>
+            <div class="story-block">
               <span class="story-label">TECHNOLOGY</span>
               <div class="proj-tech-grid">
                 <span class="proj-tech-tag">ESP32</span>
@@ -813,12 +1065,12 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
                 <span class="proj-tech-tag">MQ3</span>
                 <span class="proj-tech-tag">MPU6050</span>
                 <span class="proj-tech-tag">IoT</span>
-                <span class="proj-tech-tag">C++</span>
+                <span class="proj-tech-tag">GNU Octave</span>
               </div>
             </div>
             <div class="story-block">
               <span class="story-label">RESULT</span>
-              <p class="story-desc">Functional hardware prototype delivering sub-second wireless transmission and automated emergency telegram dispatches.</p>
+              <p class="story-desc">Functional hardware prototype presented at SDGTHON hackathon with verified sub-second alert transmission.</p>
             </div>
           </div>
 
@@ -833,25 +1085,21 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
 
       <!-- PROJECT 04: ARTLANE DIARIES -->
       <article class="proj-editorial-card reverse rv" data-tilt>
-        <!-- Visual Component Area -->
         <div class="proj-visual-container">
           <div class="proj-glow-bg" style="background:rgba(225,48,108,0.25);bottom:-20px;left:-20px"></div>
           <svg class="svg-graphic" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="400" height="240" rx="14" fill="#090910" stroke="#1f1f2e" stroke-width="1.5"/>
-            <!-- Artist Sketch Canvas -->
             <rect x="70" y="30" width="260" height="180" rx="12" fill="#141218" stroke="#e1306c" stroke-width="1.5"/>
             <circle cx="200" cy="100" r="35" fill="none" stroke="rgba(225,48,108,0.4)" stroke-width="2"/>
-            <!-- Hand-drawn vector lines representation -->
             <path d="M180 100 Q200 75 220 100 T200 125 Z" fill="none" stroke="#f472b6" stroke-width="2"/>
             <path d="M130 170 Q200 140 270 170" stroke="#e1306c" stroke-width="2" stroke-linecap="round"/>
             <text x="200" y="195" font-family="Space Mono" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">ARTLANE DIARIES // STUDIO</text>
           </svg>
         </div>
 
-        <!-- Storytelling Content Area -->
         <div class="proj-content-container">
           <div class="proj-header-row">
-            <span class="proj-badge-num">PROJECT 04</span>
+            <span class="proj-badge-num">CASE STUDY 04</span>
             <span class="proj-type-tag">CREATIVE STARTUP &amp; BRAND</span>
           </div>
 
@@ -867,11 +1115,19 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
               <p class="story-desc">Founded &amp; designed Artlane Diaries — a creative venture specializing in hand-drawn portraits, personalized gifts, and memory-based artwork, pairing emotional storytelling with clean web UI.</p>
             </div>
             <div class="story-block">
+              <span class="story-label">KEY FEATURES</span>
+              <p class="story-desc">Digital art showroom, custom commission order flow, aesthetic gallery layout, social brand integration.</p>
+            </div>
+            <div class="story-block">
+              <span class="story-label">MY CONTRIBUTION</span>
+              <p class="story-desc">Founder &amp; Creative Lead — crafted the brand identity, built the digital showroom, and manage artist-to-client operations.</p>
+            </div>
+            <div class="story-block">
               <span class="story-label">TECHNOLOGY</span>
               <div class="proj-tech-grid">
                 <span class="proj-tech-tag">Creative Startup</span>
                 <span class="proj-tech-tag">UI/UX</span>
-                <span class="proj-tech-tag">Art</span>
+                <span class="proj-tech-tag">Digital Art</span>
                 <span class="proj-tech-tag">Design</span>
                 <span class="proj-tech-tag">Vercel</span>
               </div>
@@ -893,39 +1149,32 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
 
       <!-- PROJECT 05: BUS TRACKING SYSTEM -->
       <article class="proj-editorial-card rv" data-tilt>
-        <!-- Visual Component Area -->
         <div class="proj-visual-container">
           <div class="proj-glow-bg" style="background:var(--glow2);top:-20px;right:-20px"></div>
           <svg class="svg-graphic" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="400" height="240" rx="14" fill="#090910" stroke="#1f1f2e" stroke-width="1.5"/>
-            <!-- Radar Map Grid -->
             <circle cx="200" cy="120" r="85" fill="none" stroke="#1e293b" stroke-width="1.5"/>
             <circle cx="200" cy="120" r="55" fill="none" stroke="rgba(6,182,212,0.3)" stroke-width="1.5"/>
             <line x1="200" y1="35" x2="200" y2="205" stroke="#1e293b" stroke-width="1"/>
             <line x1="115" y1="120" x2="285" y2="120" stroke="#1e293b" stroke-width="1"/>
-
-            <!-- Route Track -->
             <path d="M130 160 Q170 100 200 120 T260 80" stroke="#06b6d4" stroke-width="3" fill="none"/>
-            <!-- Bus Node Indicator -->
             <circle cx="200" cy="120" r="8" fill="#06b6d4"/>
             <circle cx="200" cy="120" r="14" fill="none" stroke="#06b6d4" stroke-width="1.5">
               <animate attributeName="r" values="8;18;8" dur="2s" repeatCount="indefinite"/>
               <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
             </circle>
-            <!-- Campus Badge -->
             <rect x="50" y="40" width="110" height="28" rx="6" fill="#0f172a" stroke="#06b6d4"/>
             <text x="105" y="57" font-family="Space Mono" font-size="8" fill="#ffffff" text-anchor="middle">LIVE TRANSIT // BUS 04</text>
           </svg>
         </div>
 
-        <!-- Storytelling Content Area -->
         <div class="proj-content-container">
           <div class="proj-header-row">
-            <span class="proj-badge-num">PROJECT 05</span>
+            <span class="proj-badge-num">CASE STUDY 05</span>
             <span class="proj-type-tag">TRANSIT &amp; REAL-TIME WEB</span>
           </div>
 
-          <h3 class="proj-title">Bus Tracking System</h3>
+          <h3 class="proj-title">Panimalar Smart Bus Transport</h3>
 
           <div class="story-flow">
             <div class="story-block">
@@ -937,18 +1186,26 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
               <p class="story-desc">Developed a college-based bus tracking web application delivering real-time location updates and route efficiency metrics for students and staff. Collaboratively built with teammate Jaffer.</p>
             </div>
             <div class="story-block">
+              <span class="story-label">KEY FEATURES</span>
+              <p class="story-desc">Interactive Leaflet map tracking, driver/admin workflow views, Supabase real-time record backend.</p>
+            </div>
+            <div class="story-block">
+              <span class="story-label">MY CONTRIBUTION</span>
+              <p class="story-desc">Co-Developer — developed frontend map integration, driver telemetry display, and database schema.</p>
+            </div>
+            <div class="story-block">
               <span class="story-label">TECHNOLOGY</span>
               <div class="proj-tech-grid">
-                <span class="proj-tech-tag">Web App</span>
-                <span class="proj-tech-tag">Tracking System</span>
+                <span class="proj-tech-tag">ESP32 Telemetry</span>
+                <span class="proj-tech-tag">Supabase</span>
+                <span class="proj-tech-tag">Leaflet Maps</span>
                 <span class="proj-tech-tag">UI/UX</span>
-                <span class="proj-tech-tag">Student Project</span>
                 <span class="proj-tech-tag">Live</span>
               </div>
             </div>
             <div class="story-block">
               <span class="story-label">RESULT</span>
-              <p class="story-desc">Empowers campus commuters with live map updates, reduced waiting times, and streamlined transit schedules.</p>
+              <p class="story-desc">Empowers campus commuters with live map updates and streamlined transit schedules.</p>
             </div>
           </div>
 
@@ -961,68 +1218,66 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
         </div>
       </article>
 
-      <!-- PROJECT 06: CHRONIX FLOW -->
+      <!-- PROJECT 06: REPLENOVA -->
       <article class="proj-editorial-card reverse rv" data-tilt>
-        <!-- Visual Component Area -->
         <div class="proj-visual-container">
           <div class="proj-glow-bg" style="background:var(--glow1);bottom:-20px;right:-20px"></div>
           <svg class="svg-graphic" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="400" height="240" rx="14" fill="#090910" stroke="#1f1f2e" stroke-width="1.5"/>
-            <!-- Productivity Timeline Layout -->
             <rect x="50" y="35" width="300" height="170" rx="10" fill="#12101a" stroke="#7c3aed" stroke-width="1.5"/>
-            <text x="70" y="60" font-family="Space Mono" font-size="11" fill="#ffffff" font-weight="bold">CHRONIX FLOW // STUDY ENGINE</text>
-
-            <!-- Task Queue Items -->
+            <text x="70" y="60" font-family="Space Mono" font-size="11" fill="#ffffff" font-weight="bold">REPLENOVA // SUPPLY CHAIN RISK</text>
             <rect x="70" y="80" width="260" height="32" rx="6" fill="#1a1826" stroke="#332d4d"/>
-            <rect x="80" y="91" width="10" height="10" rx="2" fill="#10b981"/>
-            <text x="100" y="100" font-family="Space Mono" font-size="9" fill="#ffffff">Deep Work: IoT ESP32 Firmware</text>
-
+            <circle cx="85" cy="96" r="5" fill="#ef4444"/>
+            <text x="100" y="100" font-family="Space Mono" font-size="9" fill="#ffffff">Cyclone Disruption: Port Delay +4 Days</text>
             <rect x="70" y="120" width="260" height="32" rx="6" fill="#1a1826" stroke="#332d4d"/>
-            <rect x="80" y="131" width="10" height="10" rx="2" fill="#7c3aed"/>
-            <text x="100" y="140" font-family="Space Mono" font-size="9" fill="#ffffff">UI/UX Layout Optimization</text>
-
-            <rect x="70" y="160" width="170" height="26" rx="6" fill="#1e1b2e"/>
-            <text x="155" y="177" font-family="Space Mono" font-size="8" fill="#06b6d4" text-anchor="middle">POMODORO TIMER: 25:00</text>
+            <circle cx="85" cy="136" r="5" fill="#f59e0b"/>
+            <text x="100" y="140" font-family="Space Mono" font-size="9" fill="#ffffff">AI Recommendation: Reroute Supplier B</text>
           </svg>
         </div>
 
-        <!-- Storytelling Content Area -->
         <div class="proj-content-container">
           <div class="proj-header-row">
-            <span class="proj-badge-num">PROJECT 06</span>
-            <span class="proj-type-tag">PRODUCTIVITY &amp; WORKFLOW</span>
+            <span class="proj-badge-num">CASE STUDY 06</span>
+            <span class="proj-type-tag">DATA SYSTEMS &amp; AI DASHBOARD</span>
           </div>
 
-          <h3 class="proj-title">chronix flow</h3>
+          <h3 class="proj-title">Replenova</h3>
 
           <div class="story-flow">
             <div class="story-block">
               <span class="story-label">PROBLEM</span>
-              <p class="story-desc">Students require focus-oriented study planning tools to manage tasks, prevent burnout, and streamline daily study routines.</p>
+              <p class="story-desc">Port disruptions and severe weather cause cascading supplier delays and inventory stockouts across supply chains.</p>
             </div>
             <div class="story-block">
               <span class="story-label">SOLUTION</span>
-              <p class="story-desc">Created chronix flow — an intuitive study planner and to-do-list application tailored for structured focus sessions, task tracking, and time management.</p>
+              <p class="story-desc">Developed an AI-assisted supply chain risk dashboard connecting port disruption telemetry to supplier delay metrics, stockout risk predictions, and intelligent replenishment recommendations.</p>
+            </div>
+            <div class="story-block">
+              <span class="story-label">KEY FEATURES</span>
+              <p class="story-desc">Predictive disruption alerts, risk matrix visualizer, automated supplier rerouting recommendations.</p>
+            </div>
+            <div class="story-block">
+              <span class="story-label">MY CONTRIBUTION</span>
+              <p class="story-desc">Frontend &amp; Data System Developer — built React TypeScript UI components and risk simulation models.</p>
             </div>
             <div class="story-block">
               <span class="story-label">TECHNOLOGY</span>
               <div class="proj-tech-grid">
-                <span class="proj-tech-tag">Creative Startup</span>
-                <span class="proj-tech-tag">UI/UX</span>
-                <span class="proj-tech-tag">Art</span>
-                <span class="proj-tech-tag">Design</span>
-                <span class="proj-tech-tag">GitHub Pages</span>
+                <span class="proj-tech-tag">React</span>
+                <span class="proj-tech-tag">TypeScript</span>
+                <span class="proj-tech-tag">AI Analytics</span>
+                <span class="proj-tech-tag">Supabase</span>
               </div>
             </div>
             <div class="story-block">
               <span class="story-label">RESULT</span>
-              <p class="story-desc">Published live on GitHub Pages with minimal lightweight code and responsive web access.</p>
+              <p class="story-desc">Demonstrated practical data-driven operational decision-making in engineering management workflows.</p>
             </div>
           </div>
 
           <div class="proj-footer-action">
-            <a href="https://kathir-star.github.io/chronix_Flow/" target="_blank" class="proj-cta-btn">
-              <span>VISIT FLOW</span>
+            <a href="https://github.com/Kathir-star" target="_blank" class="proj-cta-btn">
+              <span>EXPLORE CODE</span>
               <span class="arr">↗</span>
             </a>
           </div>
@@ -1035,10 +1290,63 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
 
 <div class="gdiv"></div>
 
+<!-- HACKATHONS & ACHIEVEMENTS SECTION -->
+<section class="sec" id="achievements">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="snum">06</span>
+      <h2 class="stitle">Hackathons &amp; Achievements</h2>
+      <div class="sline"></div>
+    </div>
+
+    <div class="achieve-grid sg">
+      
+      <!-- CARD 1 -->
+      <div class="achieve-card">
+        <div class="achieve-icon">🏆</div>
+        <div>
+          <h3 class="achieve-title">SDGTHON Hackathon Award</h3>
+          <div class="achieve-org">PANIMALAR ENGINEERING COLLEGE</div>
+        </div>
+        <p class="achieve-desc">
+          Recognized for engineering the RYDEX Smart Helmet system in support of UN Sustainable Development Goal #3 (Good Health &amp; Well-Being).
+        </p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="achieve-card">
+        <div class="achieve-icon">🚀</div>
+        <div>
+          <h3 class="achieve-title">Hack Hustle 2.0 National Level</h3>
+          <div class="achieve-org">SAVEETHA ENGINEERING COLLEGE &amp; IIC</div>
+        </div>
+        <p class="achieve-desc">
+          Led Team Neural Nexus in a 24-hour national hackathon challenge, developing and pitching an IoT technology solution.
+        </p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="achieve-card">
+        <div class="achieve-icon">⚡</div>
+        <div>
+          <h3 class="achieve-title">Google AI Studio Build &amp; Deploy Track</h3>
+          <div class="achieve-org">GUVI GEEK NETWORKS x HCL x GOOGLE</div>
+        </div>
+        <p class="achieve-desc">
+          Earned verified achievement for building and deploying generative AI and multilingual speech tools using Google AI Studio.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="gdiv"></div>
+
 <!-- GITHUB STATS SECTION -->
 <section class="sec">
   <div class="wrap">
-    <div class="shead rv"><span class="snum">04</span><h2 class="stitle">GitHub Overview</h2><div class="sline"></div></div>
+    <div class="shead rv"><span class="snum">07</span><h2 class="stitle">GitHub Overview</h2><div class="sline"></div></div>
     <div class="gh-grid rv">
       <img src="https://streak-stats.demolab.com?user=Kathir-star&amp;theme=dark&amp;hide_border=true&amp;background=0a0a0a&amp;ring=7c3aed&amp;fire=06b6d4&amp;currStreakLabel=aaaacc&amp;sideLabels=555577&amp;dates=444466" alt="GitHub Streak"/>
       <img src="https://github-readme-stats.vercel.app/api?username=Kathir-star&amp;show_icons=true&amp;theme=dark&amp;hide_border=true&amp;bg_color=0a0a0a&amp;title_color=ffffff&amp;icon_color=7c3aed&amp;text_color=555577" alt="GitHub Stats"/>
@@ -1051,12 +1359,12 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
 <!-- CURRENT FOCUS SECTION -->
 <section class="sec">
   <div class="wrap">
-    <div class="shead rv"><span class="snum">05</span><h2 class="stitle">Current Focus</h2><div class="sline"></div></div>
+    <div class="shead rv"><span class="snum">08</span><h2 class="stitle">Current Focus</h2><div class="sline"></div></div>
     <div class="focus-grid sg">
       <div class="fcard"><div class="fdot"></div><div class="ftitle">Full Stack</div><div class="fsub">MERN STACK<br/>DEEPENING BACKEND</div></div>
-      <div class="fcard"><div class="fdot" style="animation-delay:.4s"></div><div class="ftitle">IoT Systems</div><div class="fsub">ESP32 + SENSORS<br/>REAL HARDWARE BUILDS</div></div>
+      <div class="fcard"><div class="fdot" style="animation-delay:.4s"></div><div class="ftitle">IoT &amp; Hardware</div><div class="fsub">ESP32 + PCB DESIGN<br/>REAL HARDWARE BUILDS</div></div>
       <div class="fcard"><div class="fdot" style="animation-delay:.8s"></div><div class="ftitle">Artlane Diaries</div><div class="fsub">CREATIVE STARTUP<br/>GROWING THE BRAND</div></div>
-      <div class="fcard"><div class="fdot" style="animation-delay:1.2s"></div><div class="ftitle">Daily Reps</div><div class="fsub">CODE EVERY DAY<br/>CONSISTENCY COMPOUNDS</div></div>
+      <div class="fcard"><div class="fdot" style="animation-delay:1.2s"></div><div class="ftitle">Daily Reps</div><div class="fsub">CODE &amp; PROTOTYPE<br/>CONSISTENCY COMPOUNDS</div></div>
     </div>
   </div>
 </section>
@@ -1066,7 +1374,7 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
 <!-- CONNECT SECTION -->
 <section class="sec" id="contact">
   <div class="wrap">
-    <div class="shead rv"><span class="snum">06</span><h2 class="stitle">Connect</h2><div class="sline"></div></div>
+    <div class="shead rv"><span class="snum">09</span><h2 class="stitle">Connect</h2><div class="sline"></div></div>
     <div class="conn-grid sg">
       <a href="https://www.linkedin.com/in/kathiravan-v-160555395" target="_blank" class="ccard li">
         <div class="cico li">in</div>
@@ -1083,7 +1391,7 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
       <a href="https://drive.google.com/drive/folders/1kFMHmtgHhTsYsVkYpgP-EQe8S88Vsmxq" target="_blank" class="ccard ct">
         <div class="cico ct">↓</div>
         <div class="clabel">Certificates</div>
-        <div class="csub">GOOGLE DRIVE</div>
+        <div class="csub">GOOGLE DRIVE REPO</div>
         <div class="carr">↗</div>
       </a>
     </div>
@@ -1101,20 +1409,17 @@ footer{border-top:1px solid var(--border);padding:32px 0;display:flex;justify-co
   </div>
 </div>
 
-<!-- COFFEE SUPPORT SECTION -->
-<div class="coffee-wrap rv">
-  <div class="coffee-label">IF MY WORK HELPED YOU</div>
-  <a href="#" class="coffee-btn">☕ Buy Me a Coffee</a>
-</div>
-
 <!-- FOOTER -->
 <div class="wrap">
   <footer class="rv">
-    <span class="f1">KATHIRAVAN</span>
+    <span class="f1">KATHIRAVAN V</span>
     <span class="f2">CIRCUITS TO CODE ⚡</span>
-    <span class="f3">INDIA · 2025</span>
+    <span class="f3">PANIMALAR ENG COLLEGE · 2026</span>
   </footer>
 </div>
+
+<!-- CREDENTIALS DATA ENGINE -->
+<script src="js/certificates.js"></script>
 
 <script>
 /* ── SCROLL PROGRESS ENGINE ── */
@@ -1152,18 +1457,21 @@ if (isTouchDevice) {
     requestAnimationFrame(loop);
   })();
 
-  document.querySelectorAll('a, button, .proj-editorial-card, .skill-card, .fcard, .ccard, .acard, .btn-g, .btn-o').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cur2.style.width = '60px'; cur2.style.height = '60px';
-      cur2.style.borderColor = 'rgba(6,182,212,.65)';
-      cur2.style.background = 'rgba(6,182,212,.05)';
+  function bindCursorEvents() {
+    document.querySelectorAll('a, button, .proj-editorial-card, .skill-card, .fcard, .ccard, .acard, .btn-g, .btn-o, .btn-cv, .cred-card, .tl-item, .achieve-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cur2.style.width = '60px'; cur2.style.height = '60px';
+        cur2.style.borderColor = 'rgba(6,182,212,.65)';
+        cur2.style.background = 'rgba(6,182,212,.05)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cur2.style.width = '38px'; cur2.style.height = '38px';
+        cur2.style.borderColor = 'rgba(124,58,237,.7)';
+        cur2.style.background = 'transparent';
+      });
     });
-    el.addEventListener('mouseleave', () => {
-      cur2.style.width = '38px'; cur2.style.height = '38px';
-      cur2.style.borderColor = 'rgba(124,58,237,.7)';
-      cur2.style.background = 'transparent';
-    });
-  });
+  }
+  bindCursorEvents();
 }
 
 /* ── INTERSECTION OBSERVER SCROLL REVEAL ── */
@@ -1178,7 +1486,7 @@ const io = new IntersectionObserver(entries => {
 document.querySelectorAll('.rv, .rvl, .rvr, .sg').forEach(el => io.observe(el));
 
 /* ── TYPEWRITER ANIMATION ── */
-const phrases = ['Full Stack Developer.', 'UI/UX Designer.', 'ECE Engineer.', 'IoT Builder.', 'Creative Founder.'];
+const phrases = ['ECE Student.', 'Full Stack Developer.', 'IoT Builder.', 'UI/UX Designer.', 'Creative Founder.'];
 let pi = 0, ci = 0, del = false;
 const typer = document.getElementById('typer');
 function type(){
@@ -1241,7 +1549,7 @@ initParticles();
   requestAnimationFrame(drawParticles);
 })();
 
-/* ── DYNAMIC 3D CARD TILT & CURSOR SPOTLIGHT ENGINE ── */
+/* ── 3D CARD TILT ENGINE ── */
 if (!isTouchDevice && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.querySelectorAll('.proj-editorial-card').forEach(card => {
     card.addEventListener('mousemove', e => {
@@ -1263,23 +1571,152 @@ if (!isTouchDevice && !window.matchMedia('(prefers-reduced-motion: reduce)').mat
       card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
     });
   });
-
-  // Hero Right 3D Tilt Response
-  const heroRight = document.getElementById('hero-right');
-  if (heroRight) {
-    heroRight.addEventListener('mousemove', e => {
-      const rect = heroRight.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const rotateX = ((y - rect.height / 2) / (rect.height / 2)) * -6;
-      const rotateY = ((x - rect.width / 2) / (rect.width / 2)) * 6;
-      heroRight.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-    });
-    heroRight.addEventListener('mouseleave', () => {
-      heroRight.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
-    });
-  }
 }
+
+/* ════════════════════════════════════════════════════════════
+   CERTIFICATE RENDERER, FILTERING & MODAL SYSTEM
+   ════════════════════════════════════════════════════════════ */
+let currentCategory = 'ALL';
+let searchQuery = '';
+
+const credGrid = document.getElementById('cred-grid');
+const searchInput = document.getElementById('cred-search-input');
+const filterPills = document.querySelectorAll('.cred-pill');
+
+const modalBackdrop = document.getElementById('cert-modal-backdrop');
+const modalCloseBtn = document.getElementById('cert-modal-close');
+const modalImg = document.getElementById('modal-img');
+const modalCat = document.getElementById('modal-cat');
+const modalTitle = document.getElementById('modal-title');
+const modalOrg = document.getElementById('modal-org');
+const modalDate = document.getElementById('modal-date');
+const modalDuration = document.getElementById('modal-duration');
+const modalRole = document.getElementById('modal-role');
+const modalId = document.getElementById('modal-id');
+const modalDesc = document.getElementById('modal-desc');
+const modalTags = document.getElementById('modal-tags');
+const modalActions = document.getElementById('modal-actions');
+
+function renderCertificates() {
+  if (!credGrid || typeof CERTIFICATES_DATA === 'undefined') return;
+
+  const filtered = CERTIFICATES_DATA.filter(item => {
+    const matchCat = (currentCategory === 'ALL') || (item.category.toUpperCase() === currentCategory);
+    const q = searchQuery.toLowerCase().trim();
+    const matchSearch = !q || 
+      item.title.toLowerCase().includes(q) ||
+      item.organization.toLowerCase().includes(q) ||
+      (item.skills && item.skills.some(s => s.toLowerCase().includes(q))) ||
+      item.category.toLowerCase().includes(q);
+    return matchCat && matchSearch;
+  });
+
+  if (filtered.length === 0) {
+    credGrid.innerHTML = `
+      <div style="grid-column:1/-1;text-align:center;padding:48px 20px;background:var(--glass);border:1px dashed var(--border);border-radius:16px;">
+        <p style="font-family:var(--mono);font-size:12px;color:var(--muted)">NO MATCHING CREDENTIALS FOUND</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.4);margin-top:6px">Try changing your search query or selecting a different category filter.</p>
+      </div>
+    `;
+    return;
+  }
+
+  credGrid.innerHTML = filtered.map(item => `
+    <div class="cred-card" onclick="openCertModal('${item.id}')">
+      <div class="cred-img-preview">
+        <img src="${item.image}" alt="${item.title}" loading="lazy"/>
+        <div class="cred-img-overlay"></div>
+        <span class="cred-type-badge">${item.category}</span>
+      </div>
+
+      <div class="cred-info">
+        <h4 class="cred-title">${item.title}</h4>
+        <div class="cred-org">${item.organization}</div>
+        <div class="cred-date">🗓️ ${item.date}</div>
+      </div>
+
+      <div class="cred-tags">
+        ${(item.skills || []).slice(0, 3).map(s => `<span class="cred-tag">${s}</span>`).join('')}
+        ${(item.skills || []).length > 3 ? `<span class="cred-tag">+${item.skills.length - 3}</span>` : ''}
+      </div>
+
+      <div class="cred-actions">
+        <button class="cred-btn-view">View Details →</button>
+        ${item.verificationUrl ? `<span class="cred-verify-dot">✓ Verified</span>` : ''}
+      </div>
+    </div>
+  `).join('');
+
+  if (typeof bindCursorEvents === 'function') bindCursorEvents();
+}
+
+// Category Pill Clicks
+filterPills.forEach(pill => {
+  pill.addEventListener('click', () => {
+    filterPills.forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    currentCategory = pill.getAttribute('data-category');
+    renderCertificates();
+  });
+});
+
+// Search Input Listener
+if (searchInput) {
+  searchInput.addEventListener('input', (e) => {
+    searchQuery = e.target.value;
+    renderCertificates();
+  });
+}
+
+// Open Certificate Modal
+window.openCertModal = function(id) {
+  if (typeof CERTIFICATES_DATA === 'undefined') return;
+  const item = CERTIFICATES_DATA.find(c => c.id === id);
+  if (!item) return;
+
+  modalImg.src = item.image;
+  modalCat.textContent = `${item.category} // ${item.type.toUpperCase()}`;
+  modalTitle.textContent = item.title;
+  modalOrg.textContent = item.organization;
+  modalDate.textContent = item.date || 'Not specified';
+  modalDuration.textContent = item.duration || 'Not specified';
+  modalRole.textContent = item.role || 'Participant';
+  modalId.textContent = item.credentialId || 'N/A';
+  modalDesc.textContent = item.description || '';
+
+  modalTags.innerHTML = (item.skills || []).map(s => `<span class="cred-tag" style="padding:5px 12px;font-size:10px">${s}</span>`).join('');
+
+  let actionsHTML = '';
+  if (item.verificationUrl) {
+    actionsHTML += `<a href="${item.verificationUrl}" target="_blank" class="btn-g" style="padding:10px 20px;font-size:11px">Verify Credential ↗</a>`;
+  }
+  if (item.relatedProject) {
+    actionsHTML += `<a href="#projects" class="btn-o" style="padding:10px 20px;font-size:11px" onclick="closeCertModal()">Related Project: ${item.relatedProject}</a>`;
+  }
+  modalActions.innerHTML = actionsHTML;
+
+  modalBackdrop.classList.add('open');
+  document.body.style.overflow = 'hidden';
+};
+
+// Close Modal Function
+window.closeCertModal = function() {
+  if (modalBackdrop) modalBackdrop.classList.remove('open');
+  document.body.style.overflow = 'auto';
+};
+
+if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeCertModal);
+if (modalBackdrop) {
+  modalBackdrop.addEventListener('click', (e) => {
+    if (e.target === modalBackdrop) closeCertModal();
+  });
+}
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeCertModal();
+});
+
+// Initial Render
+renderCertificates();
 </script>
 </body>
 </html>
